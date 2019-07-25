@@ -1,6 +1,18 @@
 # Macropress Router
+[![npm version](https://badge.fury.io/js/macropress-router.svg)](https://www.npmjs.com/package/macropress-router)
+[![Dependencies](https://david-dm.org/ali-essam/macropress-router/status.svg)](https://david-dm.org/ali-essam/macropress-router)
 
 [Express](http://expressjs.com/) Router inspired by ZEIT's [Micro](https://github.com/zeit/micro) controllers style.
+
+## Install
+
+```sh
+# Using npm
+$ npm install macropress-router
+
+# Or using yarn
+$ yarn add macropress-router
+```
 
 ## Why?
 
@@ -61,8 +73,12 @@ const express = require('express')
 const app = express()
 const router = new MacropressRouter()
 
+const getData = async () => {
+  return { hello: 'world' }
+}
+
 const myController = async (req, res) => {
-  const data = { hello: 'world' }
+  const data = await getData()
   return data
 }
 
