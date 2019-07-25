@@ -1,16 +1,36 @@
 {
   "name": "macropress-router",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express Async Router - Zeit's Micro Style",
   "main": "index.js",
+  "scripts": {
+    "release": "release-it"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ali-essam/macropress-router"
   },
-  "author": "Ali Essam",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "Ali Essam <ali.essam.arafa@gmail.com>",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "express",
+    "expressjs",
+    "router",
+    "micro",
+    "async",
+    "await"
+  ],
   "peerDependencies": {
     "express": "4.x"
+  },
+  "devDependencies": {
+    "release-it": "^12.3.4"
   }
 }
